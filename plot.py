@@ -1,5 +1,6 @@
 import matplotlib.pyplot as pyplot
 import numpy as np
+import pandas as pd
 
 # Plot the data as a scatter plot
 def scatter_plot(x, y, filename=None, xlabel=None, ylabel=None, show=True):
@@ -35,17 +36,33 @@ if __name__ == "__main__":
 
 
     # Plot the data as a bar graph
-    sdvs = data[:,0] # Service delivery areas
+    sdas = data[:,0] # Service delivery areas
     scale_factor = 10 # Factor by which we are scaling number of new clients
     x_scaled = x / scale_factor
 
-    pyplot.bar(sdvs, x_scaled, width=0.25)
-    pyplot.bar([s + 0.3 for s in sdvs], y, width=0.25)
+    pyplot.bar(sdas, x_scaled, width=0.25)
+    pyplot.bar([s + 0.3 for s in sdas], y, width=0.25)
 
     pyplot.ylabel('Number of new clients / 10\nAverage wait time in days for new clients')
     pyplot.xlabel('Service Delivery Area #')
-    pyplot.xticks(sdvs)
+    pyplot.xticks(sdas)
 
     # Uncomment to the next comment to save the plot
     #pyplot.savefig('./saved_images/combined_bar.png', bbox_inches='tight', pad_inches=0.2)
+    pyplot.show()
+
+    # Plot the ratio of average wait time per number of new clients to each service delivery area as a bar graph
+    ytox = [y[i]/x[i] for i in range(0,x.size)]
+    
+    df = pd.DataFrame({'sdas':sdas, 'ytox':ytox})
+    df = df.sort_values('ytox')
+    #print(df_sorted)
+    #pyplot.bar('sdas','ytox',data=df_sorted)
+    fig, ax = pyplot.subplots()
+    df.plot(kind='bar', x='sdas', y='ytox', ax=ax)
+    pyplot.ylabel('Average wait time in days for new clients : Number of new clients')
+    pyplot.xlabel('Service Delivery Area #')
+    #pyplot.xticks(sdas)
+    
+    pyplot.savefig('./saved_images/time_per_client', bbox_inches='tight', pad_inches=0.2)
     pyplot.show()
