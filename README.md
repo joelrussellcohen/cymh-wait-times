@@ -24,7 +24,6 @@ I got the data for this project from figure 3.02 on [this page](https://mcfd.gov
 |South Fraser|995|175|87.5|
 |South Vancouver Island|1,151|220|65.8|
 |Thompson Cariboo Shuswap|1,012|374|34.0|
-|Vancouver/Richmond||||	
 
 I then stripped the commas and changed the names to classifiers 0-11 to make the data more easily computer readable (as outlined in data_dictionary.txt) and put the data into data.txt.
 
@@ -46,3 +45,13 @@ As you can see from this graph, the service delivery area's kind of follow a lin
 
 I initially plotted this graph without scaling the number of new clients but the difference between the bars made it hard to read. Scaled down you can see that service delivery area #3, north central as is reffered to in the [data dictionary](https://github.com/joelrussellcohen/cymh-wait-times/blob/main/data/data_dictionary.txt), has disproportionatly long wait times when compared to the volume of new clients for other service areas.
 
+# Part two
+## Linear regression
+I created a linear_regression.py script that uses the normal equation to compute the straight line which best fits the data. Here are the results:
+
+**Linear regression fit**
+
+![Linear regression fit](https://github.com/joelrussellcohen/cymh-wait-times/blob/main/saved_images/linear_fit.png?raw=true)
+
+### What this tells us ###
+In theory this model predicts the average wait times given any number number of new clients across all the services delivery areas, which may not be a very useful model. A better model would be to compare any give service area's number of new clients vs average wait time over time, however, I couldn't find this data in mcfd's reporting portal.
