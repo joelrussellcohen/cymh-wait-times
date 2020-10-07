@@ -35,6 +35,7 @@ I made the python script plot.py to show me a scatter plot and a bar chart of Av
 ## Scatter plot
 
 **Average wait time in days vs Number of new clients**
+
 ![Average wait time in days vs Number of new clients](https://github.com/joelrussellcohen/cymh-wait-times/blob/main/saved_images/scatter_plot.png?raw=true)
 
 As you can see from this graph, the service delivery area's kind of follow a linear trend. However there are a few outliers - note the dot in the top left corner.
