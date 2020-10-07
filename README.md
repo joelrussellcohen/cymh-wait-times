@@ -56,3 +56,11 @@ I created a linear_regression.py script that uses the normal equation to compute
 ### What this tells us ###
 In theory this model predicts the average wait times given any number number of new clients across all the services delivery areas, which may not be a very useful model. A better model would be to compare any give service area's number of new clients vs average wait time over time, however, I couldn't find this data in mcfd's reporting portal.
 Regardless, this model does not fit the data very well.
+
+# Part 3
+## Something a little more useful:
+Clearly fitting a line to this data wasn't very useful. But what would be useful? I think it would be nice to see each service delivery area's performance in terms of average wait time per new client. So I added a bar graph to show just that in plot.py. Here are the results:
+
+![Ratio of average wait times per new client](https://github.com/joelrussellcohen/cymh-wait-times/blob/main/saved_images/time_per_client.png?raw=true)
+
+From these graphs, I'd say that north central could probably use some more funding to lower wait times for clients in that service delivery area.
