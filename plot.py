@@ -31,7 +31,7 @@ if __name__ == "__main__":
     y = data[:,3] # y is the average wait time in days for new clients
 
     # To save the scatter plot, set filename='name.png'
-    scatter_plot(x,y,filename=None ylabel='Average wait time (days)', xlabel='Number of new clients')
+    scatter_plot(x,y,filename=None, ylabel='Average wait time (days)', xlabel='Number of new clients')
 
 
     # Plot the data as a bar graph
