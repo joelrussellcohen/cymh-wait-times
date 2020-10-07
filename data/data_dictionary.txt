@@ -1,0 +1,23 @@
+data_raw.txt is the original data copied from https://mcfd.gov.bc.ca/reporting/services/child-and-youth-mental-health/performance-indicators
+
+data.txt contains the data which has been modified to a more computer-readable format
+
+Column 0 contains integers [0,11] representing the corresponding Service Delivery Area:
+0 - Coast/North Shore
+1 - East Fraser
+2 - Kootenays
+3 - North Central
+4 - North Fraser
+5 - North Vancouver Island
+6 - Northeast
+7 - Northwest
+8 - Okanagan
+9 - South Fraser
+10 - South Vancouver Island
+11 - Thompson Cariboo Island
+
+Column 1 contains the number of clients receiving their first clinical service, fiscal year 2017/2018
+
+Column 2 contains the number of clients that had no wait
+
+Column 3 contains the average number of days to first service

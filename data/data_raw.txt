@@ -1,0 +1,16 @@
+ Average Days to First CYMH Service 
+
+Service Delivery Area	CYMH Clients Receiving Their First Clinical Service, Fiscal 2017/2018	Number of Clients that Had No Wait	Average Number of Days to First Service
+Coast/North Shore	786	129	50.6
+East Fraser	1,135	230	75.5
+Kootenays	642	173	44.5
+North Central	318	26	103.9
+North Fraser	996	320	54.9
+North Vancouver Island	923	57	55.4
+Northeast	421	245	27.7
+Northwest	429	149	45.7
+Okanagan	1,454	132	63.2
+South Fraser	995	175	87.5
+South Vancouver Island	1,151	220	65.8
+Thompson Cariboo Shuswap	1,012	374	34.0
+Vancouver/Richmond			
