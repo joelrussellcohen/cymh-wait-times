@@ -2,11 +2,11 @@
 Modelling CYMH wait times using linear regression in python
 
 ## Requirements
-[numpy](https://numpy.org/install/) v.>1.18
+[numpy](https://numpy.org/install/) v.>1.18 'The fundamental package for scientific computing with Python'
 
-[matplotlib](https://matplotlib.org/users/installing.html) v.> 3.3.2
+[matplotlib](https://matplotlib.org/users/installing.html) v.> 3.3.2 'Comprehensive library for creating static, animated, and interactive visualizations in Python.'
 
-[pandas](https://pandas.pydata.org/docs/getting_started/install.html) v.>1.1.3
+[pandas](https://pandas.pydata.org/docs/getting_started/install.html) v.>1.1.3 'an open source, BSD-licensed library providing high-performance, easy-to-use data structures and data analysis tools for the Python programming language'
 
 ## Introduction
 This project intends to model average wait time for first service based on the number of clients recieving their first service in python using linear regression.
