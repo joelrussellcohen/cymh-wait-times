@@ -29,10 +29,15 @@ pyplot.show()
 
 # Plot the data as a bar graph
 sdvs = data[:,0] # Service delivery areas
-bar2 = [s + 0.3 for s in sdvs]
-pyplot.bar(sdvs, x, width=0.25)
-pyplot.bar(bar2, y, width=0.25)
-pyplot.ylabel('Number of new clients\nAverage wait time in days for new clients')
+scale_factor = 10 # Factor by which we are scaling number of new clients
+x_scaled = x / scale_factor
+
+pyplot.bar(sdvs, x_scaled, width=0.25)
+pyplot.bar([s + 0.3 for s in sdvs], y, width=0.25)
+
+pyplot.ylabel('Number of new clients / 10\nAverage wait time in days for new clients')
 pyplot.xlabel('Service Delivery Area #')
+pyplot.xticks(sdvs)
+
 pyplot.savefig('./saved_images/combined_bar.png', bbox_inches='tight', pad_inches=0.2)
 pyplot.show()
