@@ -2,6 +2,8 @@
 Modelling CYMH wait times using linear regression in python
 
 ## Requirements
+Python v.>3.8
+
 [numpy](https://numpy.org/install/) v.>1.18 'The fundamental package for scientific computing with Python'
 
 [matplotlib](https://matplotlib.org/users/installing.html) v.> 3.3.2 'Comprehensive library for creating static, animated, and interactive visualizations in Python.'
